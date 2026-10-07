@@ -61,6 +61,9 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
     // `testImplementation(...)`: Pustaka yang hanya disertakan saat menjalankan Unit Test lokal di
     // mesin pengembang (JVM).
     testImplementation(libs.junit)
