@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 // inti pengaturan SDK, identitas aplikasi, arsitektur build, serta opsi pengkompilasian.
@@ -64,6 +65,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.0")
     // `testImplementation(...)`: Pustaka yang hanya disertakan saat menjalankan Unit Test lokal di
     // mesin pengembang (JVM).
     testImplementation(libs.junit)

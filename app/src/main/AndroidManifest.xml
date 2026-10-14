@@ -8,17 +8,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"> <!-- Pastikan menggunakan tema AppCompat -->
-
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".ui.theme.ProductDetailFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.CategoryFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DetailFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HomeFragment"
+            android:exported="false" /> <!-- Pastikan menggunakan tema AppCompat -->
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.DetailActivity"
             android:exported="false" />
